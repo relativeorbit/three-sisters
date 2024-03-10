@@ -1,0 +1,183 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "id": "S1_245676_IW2_20210801_20210807_VV_INT20_A085",
+  "properties": {
+    "data_type": "float32",
+    "nodata": 0,
+    "proj:shape": [
+      2018,
+      5410
+    ],
+    "proj:transform": [
+      20,
+      0,
+      547280,
+      0,
+      -20,
+      4909580,
+      0,
+      0,
+      1
+    ],
+    "proj:epsg": 32610,
+    "sar:instrument_mode": "IW",
+    "sar:frequency_band": "C",
+    "sar:product_type": "INSAR_ISCE_BURST",
+    "sar:polarizations": [
+      "VV"
+    ],
+    "start_datetime": "2021-08-01T14:14:41+00:00",
+    "end_datetime": "2021-08-07T14:14:00+00:00",
+    "reference_granule": "S1_245676_IW2_20210801T141441_VV_3C1B-BURST",
+    "secondary_granule": "S1_245676_IW2_20210807T141400_VV_6C4D-BURST",
+    "reference_orbit_direction": "DESCENDING",
+    "reference_orbit_number": 39037,
+    "secondary_orbit_direction": "DESCENDING",
+    "secondary_orbit_number": 28141,
+    "baseline": -41.4002284165875,
+    "utc_time": 51265.202703,
+    "heading": -165.9916479264471,
+    "spacecraft_height": 693000.0,
+    "earth_radius_at_nadir": 6337286.638938101,
+    "slant_range_near": 846602.7096597819,
+    "slant_range_center": 876460.7072840882,
+    "slant_range_far": 906318.7049083945,
+    "range_looks": 5,
+    "azimuth_looks": 1,
+    "insar_phase_filter": true,
+    "phase_filter_parameter": 0.5,
+    "range_bandpass_filter": false,
+    "azimuth_bandpass_filter": false,
+    "dem_source": "GLO_30",
+    "dem_resolution": 30,
+    "unwrapping_type": "snaphu_mcf",
+    "speckle_filter": true,
+    "water_mask": true,
+    "datetime": "2021-08-04T14:14:20.500000Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          547280,
+          4869220
+        ],
+        [
+          655480,
+          4869220
+        ],
+        [
+          655480,
+          4909580
+        ],
+        [
+          547280,
+          4909580
+        ],
+        [
+          547280,
+          4869220
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "ASF HyP3 Products"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "ASF HyP3 Products"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json",
+      "title": "ASF HyP3 Products"
+    }
+  ],
+  "assets": {
+    "corr": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_corr.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "unw_phase": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_unw_phase.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "lv_phi": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_lv_phi.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "lv_theta": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_lv_theta.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "dem": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_dem.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "water_mask": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_water_mask.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "conncomp": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_conncomp.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "wrapped_phase": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_wrapped_phase.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://d3gm2hf49xd6jj.cloudfront.net/4c2fd78c-effb-49a7-87fc-9cebb5fd190b/S1_245676_IW2_20210801_20210807_VV_INT20_A085_unw_phase.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ]
+    }
+  },
+  "bbox": [
+    547280,
+    4869220,
+    655480,
+    4909580
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json"
+  ],
+  "collection": "hyp3_jobs"
+}
