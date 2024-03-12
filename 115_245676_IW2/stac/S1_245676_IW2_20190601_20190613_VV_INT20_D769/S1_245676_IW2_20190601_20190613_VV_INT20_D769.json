@@ -23,37 +23,45 @@
     "proj:epsg": 32610,
     "sar:instrument_mode": "IW",
     "sar:frequency_band": "C",
+    "sar:observation_direction": "right",
+    "hyp3:reference_granule": "S1_245676_IW2_20190601T141425_VV_A083-BURST",
+    "hyp3:secondary_granule": "S1_245676_IW2_20190613T141425_VV_96DE-BURST",
+    "hyp3:reference_orbit_direction": "DESCENDING",
+    "hyp3:reference_orbit_number": 27487,
+    "hyp3:secondary_orbit_direction": "DESCENDING",
+    "hyp3:secondary_orbit_number": 27662,
+    "hyp3:baseline": 139.26990225981245,
+    "hyp3:utc_time": 51262.807506,
+    "hyp3:heading": -166.0951590407181,
+    "hyp3:spacecraft_height": 693000.0,
+    "hyp3:earth_radius_at_nadir": 6337286.638938101,
+    "hyp3:slant_range_near": 846602.7096597819,
+    "hyp3:slant_range_center": 875863.1746016637,
+    "hyp3:slant_range_far": 905123.6395435455,
+    "hyp3:range_looks": 5,
+    "hyp3:azimuth_looks": 1,
+    "hyp3:insar_phase_filter": true,
+    "hyp3:phase_filter_parameter": 0.5,
+    "hyp3:range_bandpass_filter": false,
+    "hyp3:azimuth_bandpass_filter": false,
+    "hyp3:dem_source": "GLO_30",
+    "hyp3:dem_resolution": 30,
+    "hyp3:unwrapping_type": "snaphu_mcf",
+    "hyp3:speckle_filter": true,
+    "hyp3:water_mask": true,
     "sar:product_type": "INSAR_ISCE_BURST",
     "sar:polarizations": [
       "VV"
     ],
-    "start_datetime": "2019-06-01T14:14:25+00:00",
-    "end_datetime": "2019-06-13T14:14:25+00:00",
-    "reference_granule": "S1_245676_IW2_20190601T141425_VV_A083-BURST",
-    "secondary_granule": "S1_245676_IW2_20190613T141425_VV_96DE-BURST",
-    "reference_orbit_direction": "DESCENDING",
-    "reference_orbit_number": 27487,
-    "secondary_orbit_direction": "DESCENDING",
-    "secondary_orbit_number": 27662,
-    "baseline": 139.26990225981245,
-    "utc_time": 51262.807506,
-    "heading": -166.0951590407181,
-    "spacecraft_height": 693000.0,
-    "earth_radius_at_nadir": 6337286.638938101,
-    "slant_range_near": 846602.7096597819,
-    "slant_range_center": 875863.1746016637,
-    "slant_range_far": 905123.6395435455,
-    "range_looks": 5,
-    "azimuth_looks": 1,
-    "insar_phase_filter": true,
-    "phase_filter_parameter": 0.5,
-    "range_bandpass_filter": false,
-    "azimuth_bandpass_filter": false,
-    "dem_source": "GLO_30",
-    "dem_resolution": 30,
-    "unwrapping_type": "snaphu_mcf",
-    "speckle_filter": true,
-    "water_mask": true,
+    "sar:looks_azimuth": 1,
+    "sar:looks_range": 5,
+    "sat:orbit_state": "descending",
+    "sat:absolute_orbit": 27487,
+    "view:azimuth": 193.9048409592819,
+    "processing:level": "L3",
+    "processing:lineage": "Created by ASF DAAC HyP3 using the hyp3_gamma plugin running GAMMA SAR processing software",
+    "hyp3:start_datetime": "2019-06-01T14:14:25+00:00",
+    "hyp3:end_datetime": "2019-06-13T14:14:25+00:00",
     "datetime": "2019-06-07T14:14:25Z"
   },
   "geometry": {
@@ -61,24 +69,24 @@
     "coordinates": [
       [
         [
-          548920,
-          4869220
+          -122.38636547842626,
+          43.959703562060945
         ],
         [
-          655360,
-          4869220
+          -121.06354149559083,
+          43.959703562060945
         ],
         [
-          655360,
-          4909260
+          -121.06354149559083,
+          44.33495744707164
         ],
         [
-          548920,
-          4909260
+          -122.38636547842626,
+          44.33495744707164
         ],
         [
-          548920,
-          4869220
+          -122.38636547842626,
+          43.959703562060945
         ]
       ]
     ]
@@ -169,15 +177,17 @@
     }
   },
   "bbox": [
-    548920,
-    4869220,
-    655360,
-    4909260
+    -122.38636547842626,
+    43.959703562060945,
+    -121.06354149559083,
+    44.33495744707164
   ],
   "stac_extensions": [
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
     "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/sar/v1.0.0/schema.json"
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/view/v1.0.0/schema.json"
   ],
   "collection": "hyp3_jobs"
 }
