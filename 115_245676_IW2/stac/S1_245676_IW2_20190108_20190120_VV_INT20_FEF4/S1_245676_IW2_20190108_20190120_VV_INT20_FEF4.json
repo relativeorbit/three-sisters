@@ -114,7 +114,7 @@
   "assets": {
     "corr": {
       "href": "https://d3gm2hf49xd6jj.cloudfront.net/20da76bb-0658-499e-8140-c46dcace40f9/S1_245676_IW2_20190108_20190120_VV_INT20_FEF4_corr.tif",
-      "type": "image/tiff; application=geotiff",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "roles": [
         "data"
       ]
