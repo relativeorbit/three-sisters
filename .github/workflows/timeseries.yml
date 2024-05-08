@@ -1,0 +1,40 @@
+# Batch process many image pairs
+name: Batch
+run-name: ${{ inputs.burstId }} 
+
+on:
+    workflow_dispatch:
+      inputs:
+        burstId:
+          type: string
+          required: true
+          description: ESA Burst Identifier (RelativeObit, ID, Subswath)
+          default: '137_292377_IW2'
+        polarization:
+          type: choice
+          required: true
+          description: Polarization
+          default: 'VV'
+          options: ['VV', 'VH', 'HH']
+        looks:
+          type: choice
+          required: true
+          description: Range x Azimuth Looks
+          default: '20x4'
+          options: ['20x4','10x2','5x1']
+        apply_water_mask:
+          description: 'Apply a water mask'
+          required: true
+          default: false
+          type: boolean
+
+jobs:
+    call-batch-workflow:
+      uses: relativeorbit/actions-batch-demo/.github/workflows/batch.yml@main
+      with:
+        burstId: ${{ inputs.burstId }}
+        polarization: ${{ inputs.polarization }}
+        looks: ${{ inputs.looks }}
+        apply_water_mask: ${{ inputs.apply_water_mask }}
+        workflow_name: ${{ inputs.burstID }}
+      secrets: inherit
