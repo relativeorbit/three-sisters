@@ -30,7 +30,7 @@ on:
 
 jobs:
     call-batch-workflow:
-      uses: relativeorbit/actions-batch-demo/.github/workflows/batch.yml@main
+      uses: relativeorbit/actions-batch-demo/.github/workflows/batch-job.yml@main
       with:
         burstId: ${{ inputs.burstId }}
         polarization: ${{ inputs.polarization }}
